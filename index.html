@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #box{
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+        }
+        #imges img{
+            width: 200px;
+            height: 200px;
+        }
+        #box div img{
+            width: 200px;
+            height: 200px;
+        }
+        #box div button{
+            padding: 10px;
+            margin-right: 10px;
+        }
+         /* #inf{
+            display: none;  
+        }   */
+     </style>
+</head>
+<body>
+    <form id="imges">
+        <input type="text" id="title" placeholder="enter title">
+        <p id="t-eeror"></p>
+         <input type="url" id="img" placeholder="enter image url">  <br>
+         <select  id="cate">
+            <option value="mobile">Mobile</option>
+            <option value="Mobile">Mobile</option>
+            <option value="tablet">tablet</option>
+         </select><br>
+        <input type="number" id="price" placeholder="enter price"><br>
+        <input type="text" id="cont" placeholder="enter content"><br>
+      
+        <input type="submit" value="insert">
+    </form>
+    <div id="box">
+        <p id="inf"></p>
+    </div>
+    <p id="t-title"></p>
+</body>
+<script src="index.js"></script>
+</html>
